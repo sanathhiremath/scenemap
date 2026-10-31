@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pth
+*.pt
+*.pkl
+*.joblib
+*.sqlite3
+*.sqlite3-*
+.cache/

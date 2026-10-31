@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "scene-map"
+version = "0.1"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24,<3", "opencv-python>=4.8,<6", "scipy>=1.10,<2"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

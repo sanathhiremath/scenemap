@@ -1,0 +1,3750 @@
+{
+  "version": "0.1",
+  "name": "SceneMap",
+  "frame_size": {
+    "width": 320,
+    "height": 180
+  },
+  "calibration": {
+    "focal_px": 150.0,
+    "baseline_m": 0.6,
+    "principal_point": [
+      160.0,
+      90.0
+    ],
+    "left_projection": [
+      [
+        150.0,
+        0.0,
+        160.0,
+        0.0
+      ],
+      [
+        0.0,
+        150.0,
+        90.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "right_projection": [
+      [
+        150.0,
+        0.0,
+        160.0,
+        -90.0
+      ],
+      [
+        0.0,
+        150.0,
+        90.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "synchronization_tolerance_ms": 20
+  },
+  "scenarios": [
+    {
+      "id": "clean",
+      "title": "Synchronized stereo",
+      "estimated_baseline_m": 0.6,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "right_time_ms": 0,
+          "synchronized": true,
+          "left_image": "frames/clean-00-left.png",
+          "right_image": "frames/clean-00-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 135.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 113.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.6818181818181803,
+              "y": -0.29999999999999927,
+              "z": 4.090909090909086,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6857142857142858,
+              "y": 0.34285714285714286,
+              "z": 6.428571428571429,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.6818181818181803,
+              "y": -0.29999999999999927,
+              "z": 4.090909090909086,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6857142857142858,
+              "y": 0.34285714285714286,
+              "z": 6.428571428571429,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.66,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.66,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "right_time_ms": 100,
+          "synchronized": true,
+          "left_image": "frames/clean-01-left.png",
+          "right_image": "frames/clean-01-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 140.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 174.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 117.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.5217391304347824,
+              "y": -0.28695652173913,
+              "z": 3.913043478260868,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.525,
+              "y": 0.29999999999999993,
+              "z": 5.624999999999999,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.5217391304347824,
+              "y": -0.28695652173913,
+              "z": 3.913043478260868,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.525,
+              "y": 0.29999999999999993,
+              "z": 5.624999999999999,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.54,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.54,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "right_time_ms": 200,
+          "synchronized": true,
+          "left_image": "frames/clean-02-left.png",
+          "right_image": "frames/clean-02-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 170.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 122.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.43636363636363673,
+              "y": -0.2999999999999999,
+              "z": 4.090909090909093,
+              "reprojection_error_px": 1.715401909317716e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4285714285714283,
+              "y": 0.34285714285714264,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.43636363636363673,
+              "y": -0.2999999999999999,
+              "z": 4.090909090909093,
+              "reprojection_error_px": 1.715401909317716e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4285714285714283,
+              "y": 0.34285714285714264,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "right_time_ms": 300,
+          "synchronized": true,
+          "left_image": "frames/clean-03-left.png",
+          "right_image": "frames/clean-03-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 168.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 126.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.2869565217391304,
+              "y": -0.28695652173913144,
+              "z": 3.9130434782608687,
+              "reprojection_error_px": 4.80883168708059e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.2999999999999999,
+              "y": 0.30000000000000004,
+              "z": 5.625,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.2869565217391304,
+              "y": -0.28695652173913144,
+              "z": 3.9130434782608687,
+              "reprojection_error_px": 4.80883168708059e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.2999999999999999,
+              "y": 0.30000000000000004,
+              "z": 5.625,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.30000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.30000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "right_time_ms": 400,
+          "synchronized": true,
+          "left_image": "frames/clean-04-left.png",
+          "right_image": "frames/clean-04-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 164.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 131.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.19090909090909083,
+              "y": -0.3000000000000003,
+              "z": 4.090909090909091,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.17142857142857146,
+              "y": 0.3428571428571431,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.19090909090909083,
+              "y": -0.3000000000000003,
+              "z": 4.090909090909091,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.17142857142857146,
+              "y": 0.3428571428571431,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.18000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.18000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "right_time_ms": 500,
+          "synchronized": true,
+          "left_image": "frames/clean-05-left.png",
+          "right_image": "frames/clean-05-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 135.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.05217391304347795,
+              "y": -0.2869565217391296,
+              "z": 3.913043478260867,
+              "reprojection_error_px": 4.0194366942304644e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.07499999999999991,
+              "y": 0.3000000000000013,
+              "z": 5.625,
+              "reprojection_error_px": 4.263256414560601e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.05217391304347795,
+              "y": -0.2869565217391296,
+              "z": 3.913043478260867,
+              "reprojection_error_px": 4.0194366942304644e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.07499999999999991,
+              "y": 0.3000000000000013,
+              "z": 5.625,
+              "reprojection_error_px": 4.263256414560601e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.06000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.06000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "right_time_ms": 600,
+          "synchronized": true,
+          "left_image": "frames/clean-06-left.png",
+          "right_image": "frames/clean-06-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 140.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.0857142857142863,
+              "y": 0.342857142857143,
+              "z": 6.428571428571439,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.05454545454545451,
+              "y": -0.29999999999999954,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 2,
+              "x": -0.05142370792348846,
+              "y": -0.04807949982247158,
+              "z": 4.7894421286624365,
+              "reprojection_error_px": 9.508238177262562
+            },
+            {
+              "track_id": 1,
+              "x": 0.07717334282334186,
+              "y": -0.047996954424752644,
+              "z": 4.781221914403489,
+              "reprojection_error_px": 9.508926706940116
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.05999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.05999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "right_time_ms": 700,
+          "synchronized": true,
+          "left_image": "frames/clean-07-left.png",
+          "right_image": "frames/clean-07-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 167.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 140.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.14999999999999958,
+              "y": 0.2999999999999991,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 3.430803818635432e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.18260869565217397,
+              "y": -0.28695652173913005,
+              "z": 3.9130434782608696,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.14999999999999958,
+              "y": 0.2999999999999991,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 3.430803818635432e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.18260869565217397,
+              "y": -0.28695652173913005,
+              "z": 3.9130434782608696,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.17999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.17999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "right_time_ms": 800,
+          "synchronized": true,
+          "left_image": "frames/clean-08-left.png",
+          "right_image": "frames/clean-08-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 171.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 138.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.3428571428571436,
+              "y": 0.3428571428571436,
+              "z": 6.428571428571435,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.3,
+              "y": -0.30000000000000004,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.3428571428571436,
+              "y": 0.3428571428571436,
+              "z": 6.428571428571435,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.3,
+              "y": -0.30000000000000004,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.29999999999999993,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.29999999999999993,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "right_time_ms": 900,
+          "synchronized": true,
+          "left_image": "frames/clean-09-left.png",
+          "right_image": "frames/clean-09-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 134.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.3749999999999998,
+              "y": 0.30000000000000004,
+              "z": 5.624999999999997,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.4173913043478262,
+              "y": -0.2869565217391313,
+              "z": 3.9130434782608723,
+              "reprojection_error_px": 3.430803818635432e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.3749999999999998,
+              "y": 0.30000000000000004,
+              "z": 5.624999999999997,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4173913043478262,
+              "y": -0.2869565217391313,
+              "z": 3.9130434782608723,
+              "reprojection_error_px": 3.430803818635432e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "right_time_ms": 1000,
+          "synchronized": true,
+          "left_image": "frames/clean-10-left.png",
+          "right_image": "frames/clean-10-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 180.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 132.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.6000000000000005,
+              "y": 0.3428571428571428,
+              "z": 6.428571428571432,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.5454545454545452,
+              "y": -0.3000000000000007,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.6000000000000005,
+              "y": 0.3428571428571428,
+              "z": 6.428571428571432,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.5454545454545452,
+              "y": -0.3000000000000007,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.5399999999999999,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.5399999999999999,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "right_time_ms": 1100,
+          "synchronized": true,
+          "left_image": "frames/clean-11-left.png",
+          "right_image": "frames/clean-11-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 185.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 128.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.5999999999999991,
+              "y": 0.29999999999999916,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 2.842170943040401e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.6521739130434785,
+              "y": -0.286956521739131,
+              "z": 3.9130434782608745,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.5999999999999991,
+              "y": 0.29999999999999916,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 2.842170943040401e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6521739130434785,
+              "y": -0.286956521739131,
+              "z": 3.9130434782608745,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.6599999999999998,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.6599999999999998,
+              0.3,
+              6.0
+            ]
+          }
+        }
+      ],
+      "metrics": {
+        "geometry": {
+          "position_rmse_m": 0.2935579549097504,
+          "mean_reprojection_error_px": 1.9722939871473093e-14,
+          "identity_switches": 0,
+          "matched_points": 24,
+          "skipped_frames": 0
+        },
+        "image_order": {
+          "position_rmse_m": 0.41505804287867215,
+          "mean_reprojection_error_px": 0.7923818701751298,
+          "identity_switches": 2,
+          "matched_points": 24,
+          "skipped_frames": 0
+        }
+      }
+    },
+    {
+      "id": "occlusion",
+      "title": "A missing camera observation",
+      "estimated_baseline_m": 0.6,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "right_time_ms": 0,
+          "synchronized": true,
+          "left_image": "frames/occlusion-00-left.png",
+          "right_image": "frames/occlusion-00-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 135.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 113.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.6818181818181803,
+              "y": -0.29999999999999927,
+              "z": 4.090909090909086,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6857142857142858,
+              "y": 0.34285714285714286,
+              "z": 6.428571428571429,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.6818181818181803,
+              "y": -0.29999999999999927,
+              "z": 4.090909090909086,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6857142857142858,
+              "y": 0.34285714285714286,
+              "z": 6.428571428571429,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.66,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.66,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "right_time_ms": 100,
+          "synchronized": true,
+          "left_image": "frames/occlusion-01-left.png",
+          "right_image": "frames/occlusion-01-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 140.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 174.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 117.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.5217391304347824,
+              "y": -0.28695652173913,
+              "z": 3.913043478260868,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.525,
+              "y": 0.29999999999999993,
+              "z": 5.624999999999999,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.5217391304347824,
+              "y": -0.28695652173913,
+              "z": 3.913043478260868,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.525,
+              "y": 0.29999999999999993,
+              "z": 5.624999999999999,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.54,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.54,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "right_time_ms": 200,
+          "synchronized": true,
+          "left_image": "frames/occlusion-02-left.png",
+          "right_image": "frames/occlusion-02-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 170.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 122.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.43636363636363673,
+              "y": -0.2999999999999999,
+              "z": 4.090909090909093,
+              "reprojection_error_px": 1.715401909317716e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4285714285714283,
+              "y": 0.34285714285714264,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.43636363636363673,
+              "y": -0.2999999999999999,
+              "z": 4.090909090909093,
+              "reprojection_error_px": 1.715401909317716e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4285714285714283,
+              "y": 0.34285714285714264,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "right_time_ms": 300,
+          "synchronized": true,
+          "left_image": "frames/occlusion-03-left.png",
+          "right_image": "frames/occlusion-03-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 168.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 126.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.2869565217391304,
+              "y": -0.28695652173913144,
+              "z": 3.9130434782608687,
+              "reprojection_error_px": 4.80883168708059e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.2999999999999999,
+              "y": 0.30000000000000004,
+              "z": 5.625,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.2869565217391304,
+              "y": -0.28695652173913144,
+              "z": 3.9130434782608687,
+              "reprojection_error_px": 4.80883168708059e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.2999999999999999,
+              "y": 0.30000000000000004,
+              "z": 5.625,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.30000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.30000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "right_time_ms": 400,
+          "synchronized": true,
+          "left_image": "frames/occlusion-04-left.png",
+          "right_image": "frames/occlusion-04-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 164.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": 0.17142857142857146,
+              "y": 0.3428571428571431,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 3,
+              "x": -1.3607562296906368,
+              "y": -0.29328710829158006,
+              "z": 29.211470531002707,
+              "reprojection_error_px": 9.50012727550154
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.18000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.18000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "right_time_ms": 500,
+          "synchronized": true,
+          "left_image": "frames/occlusion-05-left.png",
+          "right_image": "frames/occlusion-05-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": 0.07499999999999991,
+              "y": 0.3000000000000013,
+              "z": 5.625,
+              "reprojection_error_px": 4.263256414560601e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.08326715143036616,
+              "y": -0.07208492233719846,
+              "z": 7.180112415737502,
+              "reprojection_error_px": 9.503762411026653
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.06000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.06000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "right_time_ms": 600,
+          "synchronized": true,
+          "left_image": "frames/occlusion-06-left.png",
+          "right_image": "frames/occlusion-06-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.0857142857142863,
+              "y": 0.342857142857143,
+              "z": 6.428571428571439,
+              "reprojection_error_px": 2.299364593838355e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.0857142857142863,
+              "y": 0.342857142857143,
+              "z": 6.428571428571439,
+              "reprojection_error_px": 2.299364593838355e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.05999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.05999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "right_time_ms": 700,
+          "synchronized": true,
+          "left_image": "frames/occlusion-07-left.png",
+          "right_image": "frames/occlusion-07-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 167.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 140.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.14999999999999958,
+              "y": 0.2999999999999991,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 3.430803818635432e-14
+            },
+            {
+              "track_id": 3,
+              "x": 0.18260869565217397,
+              "y": -0.28695652173913005,
+              "z": 3.9130434782608696,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.14999999999999958,
+              "y": 0.2999999999999991,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 3.430803818635432e-14
+            },
+            {
+              "track_id": 5,
+              "x": 0.18260869565217397,
+              "y": -0.28695652173913005,
+              "z": 3.9130434782608696,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.17999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.17999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "right_time_ms": 800,
+          "synchronized": true,
+          "left_image": "frames/occlusion-08-left.png",
+          "right_image": "frames/occlusion-08-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 171.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 138.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.3428571428571436,
+              "y": 0.3428571428571436,
+              "z": 6.428571428571435,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 3,
+              "x": 0.3,
+              "y": -0.30000000000000004,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.3428571428571436,
+              "y": 0.3428571428571436,
+              "z": 6.428571428571435,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 5,
+              "x": 0.3,
+              "y": -0.30000000000000004,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.29999999999999993,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.29999999999999993,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "right_time_ms": 900,
+          "synchronized": true,
+          "left_image": "frames/occlusion-09-left.png",
+          "right_image": "frames/occlusion-09-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 134.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.3749999999999998,
+              "y": 0.30000000000000004,
+              "z": 5.624999999999997,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 3,
+              "x": 0.4173913043478262,
+              "y": -0.2869565217391313,
+              "z": 3.9130434782608723,
+              "reprojection_error_px": 3.430803818635432e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.3749999999999998,
+              "y": 0.30000000000000004,
+              "z": 5.624999999999997,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 5,
+              "x": 0.4173913043478262,
+              "y": -0.2869565217391313,
+              "z": 3.9130434782608723,
+              "reprojection_error_px": 3.430803818635432e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "right_time_ms": 1000,
+          "synchronized": true,
+          "left_image": "frames/occlusion-10-left.png",
+          "right_image": "frames/occlusion-10-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 180.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 132.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.6000000000000005,
+              "y": 0.3428571428571428,
+              "z": 6.428571428571432,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 3,
+              "x": 0.5454545454545452,
+              "y": -0.3000000000000007,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.6000000000000005,
+              "y": 0.3428571428571428,
+              "z": 6.428571428571432,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 5,
+              "x": 0.5454545454545452,
+              "y": -0.3000000000000007,
+              "z": 4.090909090909092,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.5399999999999999,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.5399999999999999,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "right_time_ms": 1100,
+          "synchronized": true,
+          "left_image": "frames/occlusion-11-left.png",
+          "right_image": "frames/occlusion-11-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 185.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 128.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.5999999999999991,
+              "y": 0.29999999999999916,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 2.842170943040401e-14
+            },
+            {
+              "track_id": 3,
+              "x": 0.6521739130434785,
+              "y": -0.286956521739131,
+              "z": 3.9130434782608745,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 4,
+              "x": -0.5999999999999991,
+              "y": 0.29999999999999916,
+              "z": 5.624999999999996,
+              "reprojection_error_px": 2.842170943040401e-14
+            },
+            {
+              "track_id": 5,
+              "x": 0.6521739130434785,
+              "y": -0.286956521739131,
+              "z": 3.9130434782608745,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.6599999999999998,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.6599999999999998,
+              0.3,
+              6.0
+            ]
+          }
+        }
+      ],
+      "metrics": {
+        "geometry": {
+          "position_rmse_m": 0.31196459252640674,
+          "mean_reprojection_error_px": 1.9273070502030745e-14,
+          "identity_switches": 1,
+          "matched_points": 21,
+          "skipped_frames": 0
+        },
+        "image_order": {
+          "position_rmse_m": 5.093260009056853,
+          "mean_reprojection_error_px": 0.9049471279299299,
+          "identity_switches": 3,
+          "matched_points": 21,
+          "skipped_frames": 0
+        }
+      }
+    },
+    {
+      "id": "calibration-drift",
+      "title": "Incorrect baseline calibration",
+      "estimated_baseline_m": 0.48,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "right_time_ms": 0,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-00-left.png",
+          "right_image": "frames/calibration-drift-00-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 135.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 113.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.5454545454545443,
+              "y": -0.23999999999999977,
+              "z": 3.272727272727269,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.5485714285714286,
+              "y": 0.2742857142857137,
+              "z": 5.142857142857143,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.5454545454545443,
+              "y": -0.23999999999999977,
+              "z": 3.272727272727269,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.5485714285714286,
+              "y": 0.2742857142857137,
+              "z": 5.142857142857143,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.66,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.66,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "right_time_ms": 100,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-01-left.png",
+          "right_image": "frames/calibration-drift-01-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 140.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 174.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 117.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.417391304347826,
+              "y": -0.22956521739130548,
+              "z": 3.130434782608695,
+              "reprojection_error_px": 5.684341886080802e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.42000000000000015,
+              "y": 0.24000000000000035,
+              "z": 4.5000000000000036,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.417391304347826,
+              "y": -0.22956521739130548,
+              "z": 3.130434782608695,
+              "reprojection_error_px": 5.684341886080802e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.42000000000000015,
+              "y": 0.24000000000000035,
+              "z": 4.5000000000000036,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.54,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.54,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "right_time_ms": 200,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-02-left.png",
+          "right_image": "frames/calibration-drift-02-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 170.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 122.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.3490909090909086,
+              "y": -0.23999999999999977,
+              "z": 3.2727272727272703,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.34285714285714275,
+              "y": 0.27428571428571463,
+              "z": 5.142857142857141,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.3490909090909086,
+              "y": -0.23999999999999977,
+              "z": 3.2727272727272703,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.34285714285714275,
+              "y": 0.27428571428571463,
+              "z": 5.142857142857141,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "right_time_ms": 300,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-03-left.png",
+          "right_image": "frames/calibration-drift-03-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 168.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 126.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.22956521739130437,
+              "y": -0.22956521739130467,
+              "z": 3.1304347826086953,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.24,
+              "y": 0.24000000000000013,
+              "z": 4.500000000000002,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.22956521739130437,
+              "y": -0.22956521739130467,
+              "z": 3.1304347826086953,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.24,
+              "y": 0.24000000000000013,
+              "z": 4.500000000000002,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.30000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.30000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "right_time_ms": 400,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-04-left.png",
+          "right_image": "frames/calibration-drift-04-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 164.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 131.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.15272727272727238,
+              "y": -0.23999999999999913,
+              "z": 3.2727272727272694,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.13714285714285718,
+              "y": 0.27428571428571413,
+              "z": 5.142857142857141,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.15272727272727238,
+              "y": -0.23999999999999913,
+              "z": 3.2727272727272694,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.13714285714285718,
+              "y": 0.27428571428571413,
+              "z": 5.142857142857141,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.18000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.18000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "right_time_ms": 500,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-05-left.png",
+          "right_image": "frames/calibration-drift-05-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 135.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.04173913043478257,
+              "y": -0.22956521739130442,
+              "z": 3.130434782608695,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.05999999999999988,
+              "y": 0.2400000000000001,
+              "z": 4.500000000000003,
+              "reprojection_error_px": 2.299364593838355e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.04173913043478257,
+              "y": -0.22956521739130442,
+              "z": 3.130434782608695,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.05999999999999988,
+              "y": 0.2400000000000001,
+              "z": 4.500000000000003,
+              "reprojection_error_px": 2.299364593838355e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.06000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.06000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "right_time_ms": 600,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-06-left.png",
+          "right_image": "frames/calibration-drift-06-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 140.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.06857142857142871,
+              "y": 0.27428571428571497,
+              "z": 5.142857142857145,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.043636363636363674,
+              "y": -0.24000000000000007,
+              "z": 3.272727272727273,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 2,
+              "x": -0.03447792319397374,
+              "y": -0.0375522960780616,
+              "z": 3.741113430068486,
+              "reprojection_error_px": 9.520394700936233
+            },
+            {
+              "track_id": 1,
+              "x": 0.06595361376102377,
+              "y": -0.03748966643652062,
+              "z": 3.7348769686746017,
+              "reprojection_error_px": 9.521463302510924
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.05999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.05999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "right_time_ms": 700,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-07-left.png",
+          "right_image": "frames/calibration-drift-07-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 167.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 140.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.12000000000000006,
+              "y": 0.24000000000000055,
+              "z": 4.500000000000002,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.14608695652173914,
+              "y": -0.2295652173913032,
+              "z": 3.130434782608695,
+              "reprojection_error_px": 6.01981465919691e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.12000000000000006,
+              "y": 0.24000000000000055,
+              "z": 4.500000000000002,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.14608695652173914,
+              "y": -0.2295652173913032,
+              "z": 3.130434782608695,
+              "reprojection_error_px": 6.01981465919691e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.17999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.17999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "right_time_ms": 800,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-08-left.png",
+          "right_image": "frames/calibration-drift-08-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 171.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 138.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.27428571428571374,
+              "y": 0.2742857142857117,
+              "z": 5.142857142857137,
+              "reprojection_error_px": 7.105427357601002e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.23999999999999994,
+              "y": -0.2399999999999999,
+              "z": 3.2727272727272734,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.27428571428571374,
+              "y": 0.2742857142857117,
+              "z": 5.142857142857137,
+              "reprojection_error_px": 7.105427357601002e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.23999999999999994,
+              "y": -0.2399999999999999,
+              "z": 3.2727272727272734,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.29999999999999993,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.29999999999999993,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "right_time_ms": 900,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-09-left.png",
+          "right_image": "frames/calibration-drift-09-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 134.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.2999999999999994,
+              "y": 0.2399999999999983,
+              "z": 4.499999999999993,
+              "reprojection_error_px": 4.693526474471802e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.3339130434782609,
+              "y": -0.2295652173913044,
+              "z": 3.1304347826086962,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.2999999999999994,
+              "y": 0.2399999999999983,
+              "z": 4.499999999999993,
+              "reprojection_error_px": 4.693526474471802e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.3339130434782609,
+              "y": -0.2295652173913044,
+              "z": 3.1304347826086962,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "right_time_ms": 1000,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-10-left.png",
+          "right_image": "frames/calibration-drift-10-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 180.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 132.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.4799999999999993,
+              "y": 0.2742857142857142,
+              "z": 5.142857142857139,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 1,
+              "x": 0.4363636363636363,
+              "y": -0.23999999999999982,
+              "z": 3.2727272727272716,
+              "reprojection_error_px": 3.1776437161565096e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.4799999999999993,
+              "y": 0.2742857142857142,
+              "z": 5.142857142857139,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.4363636363636363,
+              "y": -0.23999999999999982,
+              "z": 3.2727272727272716,
+              "reprojection_error_px": 3.1776437161565096e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.5399999999999999,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.5399999999999999,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "right_time_ms": 1100,
+          "synchronized": true,
+          "left_image": "frames/calibration-drift-11-left.png",
+          "right_image": "frames/calibration-drift-11-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 185.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 128.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 2,
+              "x": -0.48000000000000104,
+              "y": 0.24000000000000066,
+              "z": 4.500000000000006,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 1,
+              "x": 0.5217391304347823,
+              "y": -0.22956521739130475,
+              "z": 3.1304347826086945,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.48000000000000104,
+              "y": 0.24000000000000066,
+              "z": 4.500000000000006,
+              "reprojection_error_px": 2.299364593838355e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.5217391304347823,
+              "y": -0.22956521739130475,
+              "z": 3.1304347826086945,
+              "reprojection_error_px": 1.4210854715202004e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              0.6599999999999998,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.6599999999999998,
+              0.3,
+              6.0
+            ]
+          }
+        }
+      ],
+      "metrics": {
+        "geometry": {
+          "position_rmse_m": 1.0382267901222095,
+          "mean_reprojection_error_px": 2.31353829828078e-14,
+          "identity_switches": 0,
+          "matched_points": 24,
+          "skipped_frames": 0
+        },
+        "image_order": {
+          "position_rmse_m": 1.1172535834374824,
+          "mean_reprojection_error_px": 0.7934107501436527,
+          "identity_switches": 2,
+          "matched_points": 24,
+          "skipped_frames": 0
+        }
+      }
+    },
+    {
+      "id": "timestamp-skew",
+      "title": "Reject unsynchronized camera pairs",
+      "estimated_baseline_m": 0.6,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "right_time_ms": 0,
+          "synchronized": true,
+          "left_image": "frames/timestamp-skew-00-left.png",
+          "right_image": "frames/timestamp-skew-00-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 135.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 113.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.6818181818181803,
+              "y": -0.29999999999999927,
+              "z": 4.090909090909086,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6857142857142858,
+              "y": 0.34285714285714286,
+              "z": 6.428571428571429,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.6818181818181803,
+              "y": -0.29999999999999927,
+              "z": 4.090909090909086,
+              "reprojection_error_px": 2.5936810316358707e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.6857142857142858,
+              "y": 0.34285714285714286,
+              "z": 6.428571428571429,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.66,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.66,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "right_time_ms": 100,
+          "synchronized": true,
+          "left_image": "frames/timestamp-skew-01-left.png",
+          "right_image": "frames/timestamp-skew-01-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 140.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 174.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 117.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.5217391304347824,
+              "y": -0.28695652173913,
+              "z": 3.913043478260868,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.525,
+              "y": 0.29999999999999993,
+              "z": 5.624999999999999,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.5217391304347824,
+              "y": -0.28695652173913,
+              "z": 3.913043478260868,
+              "reprojection_error_px": 0.0
+            },
+            {
+              "track_id": 2,
+              "x": 0.525,
+              "y": 0.29999999999999993,
+              "z": 5.624999999999999,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.54,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.54,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "right_time_ms": 200,
+          "synchronized": true,
+          "left_image": "frames/timestamp-skew-02-left.png",
+          "right_image": "frames/timestamp-skew-02-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 170.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 122.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.43636363636363673,
+              "y": -0.2999999999999999,
+              "z": 4.090909090909093,
+              "reprojection_error_px": 1.715401909317716e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4285714285714283,
+              "y": 0.34285714285714264,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.43636363636363673,
+              "y": -0.2999999999999999,
+              "z": 4.090909090909093,
+              "reprojection_error_px": 1.715401909317716e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.4285714285714283,
+              "y": 0.34285714285714264,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "right_time_ms": 300,
+          "synchronized": true,
+          "left_image": "frames/timestamp-skew-03-left.png",
+          "right_image": "frames/timestamp-skew-03-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 149.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 168.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 126.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.2869565217391304,
+              "y": -0.28695652173913144,
+              "z": 3.9130434782608687,
+              "reprojection_error_px": 4.80883168708059e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.2999999999999999,
+              "y": 0.30000000000000004,
+              "z": 5.625,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.2869565217391304,
+              "y": -0.28695652173913144,
+              "z": 3.9130434782608687,
+              "reprojection_error_px": 4.80883168708059e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.2999999999999999,
+              "y": 0.30000000000000004,
+              "z": 5.625,
+              "reprojection_error_px": 0.0
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.30000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.30000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "right_time_ms": 400,
+          "synchronized": true,
+          "left_image": "frames/timestamp-skew-04-left.png",
+          "right_image": "frames/timestamp-skew-04-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 153.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 164.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 131.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [
+            {
+              "track_id": 1,
+              "x": -0.19090909090909083,
+              "y": -0.3000000000000003,
+              "z": 4.090909090909091,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.17142857142857146,
+              "y": 0.3428571428571431,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "baseline_points": [
+            {
+              "track_id": 1,
+              "x": -0.19090909090909083,
+              "y": -0.3000000000000003,
+              "z": 4.090909090909091,
+              "reprojection_error_px": 1.4210854715202004e-14
+            },
+            {
+              "track_id": 2,
+              "x": 0.17142857142857146,
+              "y": 0.3428571428571431,
+              "z": 6.428571428571427,
+              "reprojection_error_px": 2.842170943040401e-14
+            }
+          ],
+          "ground_truth": {
+            "A": [
+              -0.18000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.18000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "right_time_ms": 580,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-05-left.png",
+          "right_image": "frames/timestamp-skew-05-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 139.0,
+                "y": 79.0,
+                "area": 49
+              },
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              -0.06000000000000005,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              0.06000000000000005,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "right_time_ms": 680,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-06-left.png",
+          "right_image": "frames/timestamp-skew-06-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 158.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 162.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 141.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 143.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              0.05999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.05999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "right_time_ms": 780,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-07-left.png",
+          "right_image": "frames/timestamp-skew-07-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 156.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 167.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 138.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 148.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              0.17999999999999994,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.17999999999999994,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "right_time_ms": 880,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-08-left.png",
+          "right_image": "frames/timestamp-skew-08-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 152.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 171.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 135.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 152.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              0.29999999999999993,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.29999999999999993,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "right_time_ms": 980,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-09-left.png",
+          "right_image": "frames/timestamp-skew-09-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 150.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 176.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 132.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 157.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              0.42000000000000004,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.42000000000000004,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "right_time_ms": 1080,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-10-left.png",
+          "right_image": "frames/timestamp-skew-10-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 146.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 180.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 129.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 161.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              0.5399999999999999,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.5399999999999999,
+              0.3,
+              6.0
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "right_time_ms": 1180,
+          "synchronized": false,
+          "left_image": "frames/timestamp-skew-11-left.png",
+          "right_image": "frames/timestamp-skew-11-right.png",
+          "detections": {
+            "left": [
+              {
+                "x": 144.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 185.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ],
+            "right": [
+              {
+                "x": 126.0,
+                "y": 98.0,
+                "area": 49
+              },
+              {
+                "x": 166.0,
+                "y": 79.0,
+                "area": 49
+              }
+            ]
+          },
+          "points": [],
+          "baseline_points": [],
+          "ground_truth": {
+            "A": [
+              0.6599999999999998,
+              -0.3,
+              4.0
+            ],
+            "B": [
+              -0.6599999999999998,
+              0.3,
+              6.0
+            ]
+          }
+        }
+      ],
+      "metrics": {
+        "geometry": {
+          "position_rmse_m": 0.2967215367201964,
+          "mean_reprojection_error_px": 1.3381171042594778e-14,
+          "identity_switches": 0,
+          "matched_points": 10,
+          "skipped_frames": 7
+        },
+        "image_order": {
+          "position_rmse_m": 0.2967215367201964,
+          "mean_reprojection_error_px": 1.3381171042594778e-14,
+          "identity_switches": 0,
+          "matched_points": 10,
+          "skipped_frames": 7
+        }
+      }
+    }
+  ],
+  "summary": {
+    "scenarios": 4,
+    "frames": 48,
+    "generated_images": 96,
+    "elapsed_seconds": 0.40062460000626743
+  },
+  "provenance": {
+    "input": "Owned rendered synchronized stereo fixtures",
+    "detector": "Bright connected-component centroids from actual image pixels",
+    "correspondence": "Epipolar row distance and positive disparity with Hungarian assignment",
+    "triangulation": "Linear DLT/SVD with positive-depth and reprojection checks",
+    "tracker": "Gated constant-velocity3D assignment",
+    "evaluation": "Generated world coordinates used only after estimation",
+    "opencv": "5.0.0",
+    "files_sha256": {
+      "frames/clean-00-left.png": "4782b91a0dacfc3395cfc9eff28193c38f003e804ea6b2d7ae6c7f73980f1bbf",
+      "frames/clean-00-right.png": "6cd3fd85da040f43a9447b0ecee8714e8d7413d81821a710f387d1bb305e1052",
+      "frames/clean-01-left.png": "a9b09d2513c5b2a52e5dbd581ac2461326511a07005cda7a21dcc73baa253311",
+      "frames/clean-01-right.png": "be4ecb38507ba4dc4c66d712dbbf24fb941e3891d05c35661be4421939b3d469",
+      "frames/clean-02-left.png": "378d2a52fc04748ab6428829a029f7df293282294716c49c2113545562aa001b",
+      "frames/clean-02-right.png": "d2dae038b933dfc912f5420a9334a4f8271220dd02049368343ac0799c9007b7",
+      "frames/clean-03-left.png": "7bde6cebf52a5843848c66aa742d7a829d4c76caa9f9f9927fc0ac760d85f258",
+      "frames/clean-03-right.png": "3d11f39e85d73218eae0b28ddad8950f128f0d105b36ea966469d615004b5c37",
+      "frames/clean-04-left.png": "098c597f5d96be78b605b0b5ece02b35d2543ae567e725638ad917f17fa5115b",
+      "frames/clean-04-right.png": "877d70999a7ea4d7d2169ad0bf622bb68e7a41d9708a6c00a43ea93f76c53472",
+      "frames/clean-05-left.png": "011e18dc11c8e7c4416555bcf1bb21f6f5b1b44ca507026aa0d9b42d917121f3",
+      "frames/clean-05-right.png": "6f4801a15b0d8d356d040b225d9628d048b60140f1c2d254ddd41930ca24e803",
+      "frames/clean-06-left.png": "5469220691cdcdb5677cb7c531c118d7c73fcbccc3ee436de3967af41939ac2c",
+      "frames/clean-06-right.png": "258db12fa3dde80164a0d61884c57be4bfce9d8125b78f0893f512b9adc149e9",
+      "frames/clean-07-left.png": "93c261e0264d695300979ca12cb0c6db46d27a0a869952d18ddf9eb0939e8448",
+      "frames/clean-07-right.png": "d850ac6d9300c8cdf2b40f997980ee20bd38b3fc95556e0fe958b15b6b97aa6d",
+      "frames/clean-08-left.png": "f51f80361b14c40d269a642eca546e1ea820c087ea5d0b96a8dabe1f983a16a3",
+      "frames/clean-08-right.png": "e419b0f971a117d43f22afa9db91b4acea79d75da187518bea7d1ff6e9719655",
+      "frames/clean-09-left.png": "9ba5f7f0067e4c2f997c3789b19df0d69896e8253c8afbf8481e571e8d830be9",
+      "frames/clean-09-right.png": "53a3064c8d296991df56cb52e2a91dd93fd62e6bb6564ecf60712f72b3f3ca47",
+      "frames/clean-10-left.png": "d7b59203805ca91795b1363bb86e780718e8d4ecfc9e61eabed86bbf273f8bec",
+      "frames/clean-10-right.png": "eceefef4c0a0d256e73f7e46d757278aecd9917cad8f6b17b1f27f6e83336ff8",
+      "frames/clean-11-left.png": "fb8e1a22ee87d1caecdb7513648090800e9f1139fbe4a7d6636d4879dd40a6a8",
+      "frames/clean-11-right.png": "1a87a153cc8be040494f88df44492767156fb6990981be2d91c100f1489b90cc",
+      "frames/occlusion-00-left.png": "4782b91a0dacfc3395cfc9eff28193c38f003e804ea6b2d7ae6c7f73980f1bbf",
+      "frames/occlusion-00-right.png": "6cd3fd85da040f43a9447b0ecee8714e8d7413d81821a710f387d1bb305e1052",
+      "frames/occlusion-01-left.png": "a9b09d2513c5b2a52e5dbd581ac2461326511a07005cda7a21dcc73baa253311",
+      "frames/occlusion-01-right.png": "be4ecb38507ba4dc4c66d712dbbf24fb941e3891d05c35661be4421939b3d469",
+      "frames/occlusion-02-left.png": "378d2a52fc04748ab6428829a029f7df293282294716c49c2113545562aa001b",
+      "frames/occlusion-02-right.png": "d2dae038b933dfc912f5420a9334a4f8271220dd02049368343ac0799c9007b7",
+      "frames/occlusion-03-left.png": "7bde6cebf52a5843848c66aa742d7a829d4c76caa9f9f9927fc0ac760d85f258",
+      "frames/occlusion-03-right.png": "3d11f39e85d73218eae0b28ddad8950f128f0d105b36ea966469d615004b5c37",
+      "frames/occlusion-04-left.png": "098c597f5d96be78b605b0b5ece02b35d2543ae567e725638ad917f17fa5115b",
+      "frames/occlusion-04-right.png": "5ca1457e23f106b497017f04824324d0c7da2588f2d9f5ce436cd35f3834be3f",
+      "frames/occlusion-05-left.png": "011e18dc11c8e7c4416555bcf1bb21f6f5b1b44ca507026aa0d9b42d917121f3",
+      "frames/occlusion-05-right.png": "86ef39d209dbfef9eb17aa8b2461a207464ec1b69c18611d92d4b79215c57fe9",
+      "frames/occlusion-06-left.png": "5469220691cdcdb5677cb7c531c118d7c73fcbccc3ee436de3967af41939ac2c",
+      "frames/occlusion-06-right.png": "3f263262b38b398445ae9e511590eeb8093d3bb0f54becb6879c607996609769",
+      "frames/occlusion-07-left.png": "93c261e0264d695300979ca12cb0c6db46d27a0a869952d18ddf9eb0939e8448",
+      "frames/occlusion-07-right.png": "d850ac6d9300c8cdf2b40f997980ee20bd38b3fc95556e0fe958b15b6b97aa6d",
+      "frames/occlusion-08-left.png": "f51f80361b14c40d269a642eca546e1ea820c087ea5d0b96a8dabe1f983a16a3",
+      "frames/occlusion-08-right.png": "e419b0f971a117d43f22afa9db91b4acea79d75da187518bea7d1ff6e9719655",
+      "frames/occlusion-09-left.png": "9ba5f7f0067e4c2f997c3789b19df0d69896e8253c8afbf8481e571e8d830be9",
+      "frames/occlusion-09-right.png": "53a3064c8d296991df56cb52e2a91dd93fd62e6bb6564ecf60712f72b3f3ca47",
+      "frames/occlusion-10-left.png": "d7b59203805ca91795b1363bb86e780718e8d4ecfc9e61eabed86bbf273f8bec",
+      "frames/occlusion-10-right.png": "eceefef4c0a0d256e73f7e46d757278aecd9917cad8f6b17b1f27f6e83336ff8",
+      "frames/occlusion-11-left.png": "fb8e1a22ee87d1caecdb7513648090800e9f1139fbe4a7d6636d4879dd40a6a8",
+      "frames/occlusion-11-right.png": "1a87a153cc8be040494f88df44492767156fb6990981be2d91c100f1489b90cc",
+      "frames/calibration-drift-00-left.png": "4782b91a0dacfc3395cfc9eff28193c38f003e804ea6b2d7ae6c7f73980f1bbf",
+      "frames/calibration-drift-00-right.png": "6cd3fd85da040f43a9447b0ecee8714e8d7413d81821a710f387d1bb305e1052",
+      "frames/calibration-drift-01-left.png": "a9b09d2513c5b2a52e5dbd581ac2461326511a07005cda7a21dcc73baa253311",
+      "frames/calibration-drift-01-right.png": "be4ecb38507ba4dc4c66d712dbbf24fb941e3891d05c35661be4421939b3d469",
+      "frames/calibration-drift-02-left.png": "378d2a52fc04748ab6428829a029f7df293282294716c49c2113545562aa001b",
+      "frames/calibration-drift-02-right.png": "d2dae038b933dfc912f5420a9334a4f8271220dd02049368343ac0799c9007b7",
+      "frames/calibration-drift-03-left.png": "7bde6cebf52a5843848c66aa742d7a829d4c76caa9f9f9927fc0ac760d85f258",
+      "frames/calibration-drift-03-right.png": "3d11f39e85d73218eae0b28ddad8950f128f0d105b36ea966469d615004b5c37",
+      "frames/calibration-drift-04-left.png": "098c597f5d96be78b605b0b5ece02b35d2543ae567e725638ad917f17fa5115b",
+      "frames/calibration-drift-04-right.png": "877d70999a7ea4d7d2169ad0bf622bb68e7a41d9708a6c00a43ea93f76c53472",
+      "frames/calibration-drift-05-left.png": "011e18dc11c8e7c4416555bcf1bb21f6f5b1b44ca507026aa0d9b42d917121f3",
+      "frames/calibration-drift-05-right.png": "6f4801a15b0d8d356d040b225d9628d048b60140f1c2d254ddd41930ca24e803",
+      "frames/calibration-drift-06-left.png": "5469220691cdcdb5677cb7c531c118d7c73fcbccc3ee436de3967af41939ac2c",
+      "frames/calibration-drift-06-right.png": "258db12fa3dde80164a0d61884c57be4bfce9d8125b78f0893f512b9adc149e9",
+      "frames/calibration-drift-07-left.png": "93c261e0264d695300979ca12cb0c6db46d27a0a869952d18ddf9eb0939e8448",
+      "frames/calibration-drift-07-right.png": "d850ac6d9300c8cdf2b40f997980ee20bd38b3fc95556e0fe958b15b6b97aa6d",
+      "frames/calibration-drift-08-left.png": "f51f80361b14c40d269a642eca546e1ea820c087ea5d0b96a8dabe1f983a16a3",
+      "frames/calibration-drift-08-right.png": "e419b0f971a117d43f22afa9db91b4acea79d75da187518bea7d1ff6e9719655",
+      "frames/calibration-drift-09-left.png": "9ba5f7f0067e4c2f997c3789b19df0d69896e8253c8afbf8481e571e8d830be9",
+      "frames/calibration-drift-09-right.png": "53a3064c8d296991df56cb52e2a91dd93fd62e6bb6564ecf60712f72b3f3ca47",
+      "frames/calibration-drift-10-left.png": "d7b59203805ca91795b1363bb86e780718e8d4ecfc9e61eabed86bbf273f8bec",
+      "frames/calibration-drift-10-right.png": "eceefef4c0a0d256e73f7e46d757278aecd9917cad8f6b17b1f27f6e83336ff8",
+      "frames/calibration-drift-11-left.png": "fb8e1a22ee87d1caecdb7513648090800e9f1139fbe4a7d6636d4879dd40a6a8",
+      "frames/calibration-drift-11-right.png": "1a87a153cc8be040494f88df44492767156fb6990981be2d91c100f1489b90cc",
+      "frames/timestamp-skew-00-left.png": "4782b91a0dacfc3395cfc9eff28193c38f003e804ea6b2d7ae6c7f73980f1bbf",
+      "frames/timestamp-skew-00-right.png": "6cd3fd85da040f43a9447b0ecee8714e8d7413d81821a710f387d1bb305e1052",
+      "frames/timestamp-skew-01-left.png": "a9b09d2513c5b2a52e5dbd581ac2461326511a07005cda7a21dcc73baa253311",
+      "frames/timestamp-skew-01-right.png": "be4ecb38507ba4dc4c66d712dbbf24fb941e3891d05c35661be4421939b3d469",
+      "frames/timestamp-skew-02-left.png": "378d2a52fc04748ab6428829a029f7df293282294716c49c2113545562aa001b",
+      "frames/timestamp-skew-02-right.png": "d2dae038b933dfc912f5420a9334a4f8271220dd02049368343ac0799c9007b7",
+      "frames/timestamp-skew-03-left.png": "7bde6cebf52a5843848c66aa742d7a829d4c76caa9f9f9927fc0ac760d85f258",
+      "frames/timestamp-skew-03-right.png": "3d11f39e85d73218eae0b28ddad8950f128f0d105b36ea966469d615004b5c37",
+      "frames/timestamp-skew-04-left.png": "098c597f5d96be78b605b0b5ece02b35d2543ae567e725638ad917f17fa5115b",
+      "frames/timestamp-skew-04-right.png": "877d70999a7ea4d7d2169ad0bf622bb68e7a41d9708a6c00a43ea93f76c53472",
+      "frames/timestamp-skew-05-left.png": "011e18dc11c8e7c4416555bcf1bb21f6f5b1b44ca507026aa0d9b42d917121f3",
+      "frames/timestamp-skew-05-right.png": "873eb0e3aa1c79b3abfc27cbfd7bb007550afd40e55b05f03410cfc10de14540",
+      "frames/timestamp-skew-06-left.png": "5469220691cdcdb5677cb7c531c118d7c73fcbccc3ee436de3967af41939ac2c",
+      "frames/timestamp-skew-06-right.png": "724ccae569a63110131c0a7bf2c4e4340dc24d5dfdae5610e429701c993b6cec",
+      "frames/timestamp-skew-07-left.png": "93c261e0264d695300979ca12cb0c6db46d27a0a869952d18ddf9eb0939e8448",
+      "frames/timestamp-skew-07-right.png": "501dc721626a0eed47da12fe7fd8fc29d0bd9b7e7459b80ede1c0df1a66999a2",
+      "frames/timestamp-skew-08-left.png": "f51f80361b14c40d269a642eca546e1ea820c087ea5d0b96a8dabe1f983a16a3",
+      "frames/timestamp-skew-08-right.png": "147e5f803ffe5201515b4a4110401933ce089b5af7a69181e47e12b8ae92be88",
+      "frames/timestamp-skew-09-left.png": "9ba5f7f0067e4c2f997c3789b19df0d69896e8253c8afbf8481e571e8d830be9",
+      "frames/timestamp-skew-09-right.png": "0bd18f72213558e57e4668f10d1909f6e9018e6d34d68d3c7baddff6e5b69429",
+      "frames/timestamp-skew-10-left.png": "d7b59203805ca91795b1363bb86e780718e8d4ecfc9e61eabed86bbf273f8bec",
+      "frames/timestamp-skew-10-right.png": "763400ca57fa04eab5b04229acfe6a000b25677246573372f4ca6c24f68d9d62",
+      "frames/timestamp-skew-11-left.png": "fb8e1a22ee87d1caecdb7513648090800e9f1139fbe4a7d6636d4879dd40a6a8",
+      "frames/timestamp-skew-11-right.png": "766da68654ddb6df7834882e7b8ee11e277c38c3c5572505f237f86f5b5f7ebb"
+    }
+  },
+  "limitations": [
+    "Owned generated pinhole stereo fixtures, not real-camera or learned-model validation.",
+    "Correspondence assumes rectified calibration and distinctive vertical positions; difficult epipolar ambiguity remains unsolved.",
+    "Identical-colored objects are detected from pixels; world identities are not estimator inputs.",
+    "Baseline scale error can leave reprojection error small while reconstructed distances are wrong.",
+    "Unsynchronized pairs produce no reconstructed points; missing observations are not silently interpolated.",
+    "Identity-switch evaluation associates estimated positions with ground truth per frame and is not a standard MOT benchmark.",
+    "Twelve frames per scenario are deterministic fixtures, not evidence of generalization."
+  ]
+}
